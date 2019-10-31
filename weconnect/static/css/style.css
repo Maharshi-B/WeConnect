@@ -1,0 +1,110 @@
+body {
+  background-color: #050505;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+.div-card {
+  background-color: #171717;
+  border: 1px solid #232323;
+  padding: 15px;
+  margin-top: 10px;
+
+  margin-bottom: 10px;
+}
+.my-nav {
+  background-color: #171717;
+  border-bottom: 1px solid #232323;
+}
+.zero-padding {
+  padding: 0px;
+}
+.group-foot {
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #171717;
+}
+.my-card {
+  background-color: #171717;
+  color: aliceblue;
+  padding: 0px;
+  border: 1px solid #232323;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.my-card:hover {
+  border-color: #a9a9a9;
+}
+.my-header {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: aliceblue;
+  font-size: 150%;
+  border-bottom: 1px solid #232323;
+}
+.description-body {
+  padding-left: 20px;
+  height: 100px;
+
+  padding-bottom: 10px;
+}
+.group-card {
+  text-decoration: none !important;
+  border-radius: 0px;
+}
+#id_name,
+#id_username,
+#id_email,
+#id_password1,
+#id_password2,
+#id_description {
+  background-color: #050505;
+  color: aliceblue;
+}
+
+.form-control {
+  background-color: #050505;
+  color: aliceblue;
+}
+.post-card {
+  background-color: #171717;
+  color: aliceblue;
+  border: 1px solid #232323;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.post-card:hover {
+  border-color: #a9a9a9;
+}
+.post-header {
+  text-align: left;
+  padding-top: 2px;
+  font-size: xx-small;
+  border-bottom: 1px solid #232323;
+}
+.post-msg {
+  padding-top: 10px;
+}
+.btn {
+  border-radius: 0px;
+}
+.group-color {
+  color: yellow;
+}
+.group-color:hover {
+  color: yellow;
+  text-decoration: none;
+}
+.no-margin {
+  margin: 0px;
+}
+.padding-top {
+  padding-top: 5px;
+}
+.hr-bar {
+  margin: 0px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: #232323;
+}

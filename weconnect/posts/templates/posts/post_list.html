@@ -1,0 +1,27 @@
+{% extends "posts/posts_base.html" %}
+{% load bootstrap4 %}
+
+{% block prepost %}
+{% if user.is_authenticated %}
+<div class="col-md-4">
+</div>
+{% endif %}
+{% endblock %}
+
+{% block post_content %}
+<div class="col-md-8">
+    {% if user.is_authenticated %}
+    {% for post in post_list %}
+    {% include "posts/_post.html" %}
+    {% endfor %}
+    {% else %}
+    <div>
+        <p>Welcome to WeConnect.
+            <a href="{% url 'accounts:login' %}">Login</a> or <a href="{% url 'accounts:signup' %}">Sign up</a> to
+            continue.
+        </p>
+    </div>
+    {% endif %}
+</div>
+
+{% endblock %}
