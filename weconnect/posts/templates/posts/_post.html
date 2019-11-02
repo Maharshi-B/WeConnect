@@ -33,5 +33,23 @@
         <div class="post-msg">
             <h5>{{post.message_html|safe}}</h5>
         </div>
+        <hr class="hr-bar">
+        <div>
+            <table style="width:100%;">
+                <td>
+                    <table>
+                        <td>
+                            <h6 style="font-size: x-small; margin-bottom: 0px; margin-right: 5px;">{{post.likes}}</h6>
+                        </td>
+                        <td>
+                            <a class="like-button" href="#">
+                                <i class="fa fa-thumbs-o-up" style="font-size:24px"></i>
+                            </a>
+                        </td>
+                    </table>
+                </td>
+            </table>
+        </div>
     </a>
+
 </div>
