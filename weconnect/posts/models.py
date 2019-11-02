@@ -15,7 +15,7 @@ class Post(models.Model):
     message = models.TextField()
     message_html = models.TextField(editable=False)
     group = models.ForeignKey(Group, related_name='posts',  on_delete="Cascade",
-                              null=True, blank=True)
+                              null=True, blank=False)
 
     def __str__(self):
         return self.message
