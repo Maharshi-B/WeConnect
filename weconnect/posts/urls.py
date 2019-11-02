@@ -6,9 +6,9 @@ app_name = 'posts'
 
 urlpatterns = [
     path('new/', views.CreatePost.as_view(), name="create"),
-    path('by/(?P<username>[-\w]+)/', views.UserPosts.as_view(),
+    path('by/<str:username>/', views.UserPosts.as_view(),
          name="for_user"),
-    path('by/(?P<username>[-\w]+)/(?P<pk>\d+)/',
+    path('<int:pk>/',
          views.PostDetail.as_view(), name="single"),
-    path('delete/(?P<pk>\d+)/', views.DeletePost.as_view(), name='delete'),
+    path('<int:pk>/delete', views.DeletePost.as_view(), name='delete'),
 ]
