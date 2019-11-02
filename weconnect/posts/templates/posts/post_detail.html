@@ -1,7 +1,42 @@
 {% extends "posts/posts_base.html" %}
 {% block  post_content %}
 <div class="col-md-8">
-    {% include "posts/_post.html" %}
+    <div class="col post-card-detail">
+        <table style="width:100%;">
+            <td>
+                <h6 class="padding-top">
+                    <a class="group-color" href="{% url 'groups:single' slug=post.group.slug %}">
+                        {{post.group.name}}
+                    </a>
+                </h6>
+            </td>
+            <td>
+                {% if user.is_authenticated and user == post.user and not hide_delete%}
+                <a class="no-margin padding-top" href="{% url 'posts:delete' pk=post.pk %}">
+                    <i class="fa fa-remove" style="color: #a9a9a9; float: right;"></i>
+                </a>
+                {% endif %}
+            </td>
+        </table>
+        <table style=" width: 100%; font-size: xx-small;">
+            <td>
+                <p class="no-margin padding-top">Posted by
+                    <a href="{% url 'posts:for_user' username=post.user.username %}">
+                        @{{post.user.username}}
+                    </a>
+                </p>
+            </td>
+            <td>
+                <p class="no-margin padding-top">on {{post.created_at}}
+                </p>
+            </td>
+        </table>
+        <hr class="hr-bar">
+        <div class="post-msg">
+            <h5>{{post.message_html|safe}}</h5>
+        </div>
+
+    </div>
 </div>
 
 {% endblock %}

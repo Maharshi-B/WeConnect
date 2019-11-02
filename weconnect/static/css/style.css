@@ -74,6 +74,13 @@ body {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+.post-card-detail {
+  background-color: #171717;
+  color: aliceblue;
+  border: 1px solid #232323;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 .post-card:hover {
   border-color: #a9a9a9;
 }
@@ -107,4 +114,11 @@ body {
   margin-top: 2px;
   margin-bottom: 2px;
   background-color: #232323;
+}
+.box-link {
+  color: aliceblue;
+}
+.box-link:hover {
+  text-decoration: none;
+  color: aliceblue;
 }
